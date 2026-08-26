@@ -831,7 +831,6 @@ if df is not None and not df.empty:
         "</style>",
         unsafe_allow_html=True,
     )
-    st.caption(f"{len(df):,}".replace(",", " ") + " ligne(s) au total — défile dans le tableau pour toutes les voir.")
     st.table(_df_display)
 else:
     st.caption("Aucune donnée chargée pour l'instant.")
